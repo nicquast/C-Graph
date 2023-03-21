@@ -1,5 +1,6 @@
 #include "graph.h"
-
+#define DEFAULT_NODE_CPCT 2
+#define DEFAULT_ADJ_CPCT 2
 //Graph Structure
 struct graph {
     node_t** nodes;
@@ -17,8 +18,12 @@ struct node{
 
 //Graph initialisation function
 graph_t* graph_create() {
-
+    graph_t* gp = malloc(sizeof(graph_t));
+    gp->node_num = 0;
+    gp->node_cpct = DEFAULT_NODE_CPCT;
+    return gp;
 }
+
 //Deletion function for graph
 void graph_free(graph_t*) {
 
