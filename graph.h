@@ -18,7 +18,7 @@ void graph_remove_node(graph_t*, node_t*);
 node_t* graph_get_node(graph_t*, char);
 
 //Adds an edge between 2 nodes
-void node_add_edge(node_t*, node_t*)
+void node_add_edge(node_t*, node_t*);
 
 //Returns the number of nodes in the graph
 int graph_size(graph_t*);
